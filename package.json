@@ -4,7 +4,7 @@
   "description": "This web scraper pulls stats from ESPN's website HELLO WORLD",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,8 @@
   "dependencies": {
     "axios": "^0.26.1",
     "cheerio": "^1.0.0-rc.10",
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "jquery": "^3.6.0",
+    "nodemon": "^2.0.15"
   }
 }
