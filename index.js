@@ -26,14 +26,14 @@ app.get('/data', (req, res) => {
             const $ = cheerio.load(html)
 
             $('span',  html).each(function () {
-                const numbers = $(this).text()
+                const numbers = $(this).text() //pulls data with axios funtion
                 standings.push({
                     numbers
                 })
             })
-            res.json(standings)
+            res.json(standings) //presents data as json 
             console.log(standings)
-        }).catch((err) => console.log(err))
+        }).catch((err) => console.log(err)) //async error catch
 })
 
 
